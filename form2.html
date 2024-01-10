@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" >
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:5500/html/shop.html" style="color:darkviolet;">Shop </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5500/html/reviews.html" style="color: darkviolet; " >Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5500/html/contactus.html" style="color: darkviolet;">contact us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5500/html/Aboutus.html" style="color:darkviolet;"> About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5500/html/form.html" style="color: darkviolet;">Sign up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5500/html/site%20map.html" style="color: darkviolet;">Sitemap</a>
+      </li>
+      
+    </ul>
+    </div>
+    </nav>
+
+
+
+
+    <div class="container mt-5" id="form">
+        <h2 class="mb-4">Budget Calculator</h2>
+        <p>Date and Time: <span id="datetime"></span></p>
+    
+        <form id="budgetForm">
+            <div class="form-group">
+                <label for="income">Income:</label>
+                <input type="number" class="form-control" id="income" name="income" required>
+               
+            </div>
+    
+            <div class="form-group">
+                <label for="expenses">Expenses:</label>
+                <input type="number" class="form-control" id="expenses" name="expenses" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="savings">Savings:</label>
+                <input type="number" class="form-control" id="savings" name="savings" required>
+            </div>
+    
+            <div class="form-group">
+                <label>Expense Type:</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="rent" name="expenseType" value="Rent">
+                    <label class="form-check-label" for="rent">Rent</label>
+                </div>
+               
+                
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="utilities" name="expenseType" value="shoping" >
+                    <label class="form-check-label" for="utilities" >shoping</label>
+                </div>
+    
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="utilities1" name="expenseType" value="food" >
+                    <label class="form-check-label" for="utilities" >food</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="utilities2" name="expenseType" value="transportation" >
+                    <label class="form-check-label" for="utilities" >transportation</label>
+                    
+                </div>
+    
+    
+            </div>
+    
+            <button type="button" class="btn btn-primary" onclick="calculateBudget()">Calculate</button>
+        </form>
+    
+        <div class="mt-4">
+            <h4>Report:</h4>
+            <textarea id="report" class="form-control" rows="5" readonly></textarea>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>?
